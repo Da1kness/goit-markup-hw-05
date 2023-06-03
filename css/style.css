@@ -719,7 +719,7 @@ fill:#404bbf;
 
 .modal-close:hover,
 .modal-close:focus {
-    background-color: #404bbf;
+    background-color:var(--pressed-state);
     border: none;
 }
 
