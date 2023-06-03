@@ -722,7 +722,6 @@ fill:#404bbf;
 .modal-close:focus {
     background-color:var(--pressed-state);
     border: none;
-    fill: #FFFFFF;
 }
 
 .modal-close:hover .modal-close-icon,
