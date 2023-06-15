@@ -13,11 +13,10 @@
 
 .main-header{
     border-bottom: 1px solid #e7e9fc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
+
 
 .container{
     width: 1158px;
@@ -36,7 +35,6 @@ li{list-style-type:none;}
 .navigation{
     display: flex;
     align-items: center;
-    gap: 40px
 }
 
 
@@ -56,7 +54,6 @@ li{list-style-type:none;}
 
 .link{
     text-decoration: none;
-    margin-bottom: 16px;
 }
 
 
@@ -76,20 +73,14 @@ li{list-style-type:none;}
 img{display:block;}
 
 .logotype {
-font-family: 'Raleway', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-color:var(--primary-brand); 
-text-transform: uppercase;
-margin-right: 76px;
-display: inline-block;
+    margin-right: 76px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--primary-brand); 
 }
 
 
@@ -139,10 +130,6 @@ color: var(--pressed-state);
     color: var(--pressed-state);
     }
 
-.menu-item{
-    padding: 24px 0;
-}
-
 
 .menu-link{
 font-family: 'Roboto', sans-serif;
@@ -150,6 +137,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
+display: block;
 letter-spacing: 0.02em;
 color: #2E2F42;
 padding: 24px 0;
@@ -177,13 +165,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 
 
 .menu-link-js{
-    position: relative; 
     color: var(--pressed-state);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link-js::after{
-    content:'';
     position: absolute;
     left: 0;
     /* napisat bottom -28px */
@@ -193,10 +179,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
     border-radius: 2px;
     width: 100%;
     display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link-js{
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -226,6 +208,8 @@ line-height: 1.07;
 color: #ffffff;
 max-width: 496px;
 margin-bottom:48px;
+margin-left: auto;
+margin-right: auto;
 }
 
 
@@ -237,14 +221,14 @@ font-size: 16px;
 line-height: 1.5;
 min-width: 169px;
 display: block;
-align-items: center;
 letter-spacing: 0.04em;
 color:var(--background-color);
 padding: 16px 32px;
-gap: 10px;
 cursor: pointer;
 height: 56px;
 border: none;
+margin-left: auto;
+margin-right: auto;
 background-color:#4d5ae5;
 border-radius: 4px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -277,7 +261,7 @@ font-size: 20px;
 line-height: 24px;
 letter-spacing: 0.02em;
 color: var(--dark);
-margin: 8px 0;
+margin-bottom: 8px;
 text-align: center;
 }
 
@@ -290,6 +274,7 @@ font-size: 16px;
 line-height: 24px;
 letter-spacing: 0.02em;
 color: var(--text);
+margin-bottom: 8px;
 }
 
 
@@ -317,6 +302,9 @@ margin-bottom: 72px;
 
 
 .sec-main{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 188px 0;
     background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
@@ -393,6 +381,11 @@ color:var(--cloud);
 max-width: 264px;
 }
 
+.sm-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
 
 .logo-part-footer{
     color: #f4f4fd;
@@ -516,7 +509,6 @@ max-width: 264px;
     height: 112px;
     background-color: #f4f4fd;
     border-radius: 4px;
-    margin-bottom: 8px;
 }
 
 .svg-pic-atr{
@@ -608,7 +600,6 @@ max-width: 264px;
 }
 
 .customer-link:hover .customer-pic{
-fill:#404bbf;
 }
 
 
@@ -631,6 +622,20 @@ fill:#404bbf;
 
 .logo-wrapper{
     margin-right: 120px;
+}
+
+.logo-footer{
+    margin-bottom: 16px;
+    display: inline-block;
+    margin-right: 76px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-brand);
+    text-decoration: none;
 }
 
 .footer-desc{
